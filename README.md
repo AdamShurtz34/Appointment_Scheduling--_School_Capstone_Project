@@ -1,1 +1,1 @@
-# Inventory_mngmnt_--_School_Final_Project
+# Appointment_Scheduling--_School_Capstone_Project
