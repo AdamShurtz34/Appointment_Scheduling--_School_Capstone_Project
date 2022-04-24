@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="462.0" prefWidth="402.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Project.NotificationController">
+   <children>
+      <Label layoutX="34.0" layoutY="14.0" text="Upcoming Appointments">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="79.0" text="You have">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="126.0" layoutY="79.0" text="appointments in the next 15 minutes">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="numberOfAppointments" layoutX="93.0" layoutY="79.0" text="0">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <TextArea fx:id="displayAppointments" layoutX="14.0" layoutY="119.0" prefHeight="281.0" prefWidth="375.0" editable="false"/>
+      <Button layoutX="158.0" layoutY="416.0" mnemonicParsing="false" onAction="#CloseButton" prefHeight="32.0" prefWidth="88.0" text="Close" />
+   </children>
+</AnchorPane>

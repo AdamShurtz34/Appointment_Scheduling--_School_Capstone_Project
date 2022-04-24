@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="293.0" prefWidth="538.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Project.AppointmentsReportController">
+   <children>
+      <Label layoutX="14.0" layoutY="14.0" text="Appointments Report">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="87.0" text="Appointment Type">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="124.0" text="Appointment Month">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Button layoutX="204.0" layoutY="242.0" mnemonicParsing="false" onAction="#closeButton" prefHeight="25.0" prefWidth="95.0" text="Close" />
+      <ComboBox fx:id="selectType" layoutX="182.0" layoutY="87.0" onAction="#Change" prefWidth="150.0" />
+      <ComboBox fx:id="selectMonth" layoutX="182.0" layoutY="124.0" onAction="#Change" prefWidth="150.0" />
+      <Label layoutX="14.0" layoutY="180.0" text="Total number of appointments by selected type and month:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="Num" layoutX="497.0" layoutY="181.0" text="0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="513.0" prefWidth="550.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Project.EditAppointmentController">
+   <children>
+      <Label layoutX="14.0" layoutY="14.0" text="Edit Appointment">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <TextField fx:id="AppointmentID" editable="false" layoutX="189.0" layoutY="85.0" />
+      <TextField fx:id="Title" layoutX="189.0" layoutY="121.0" />
+      <TextField fx:id="Description" layoutX="189.0" layoutY="157.0" />
+      <TextField fx:id="Location" layoutX="189.0" layoutY="192.0" />
+      <TextField fx:id="Type" layoutX="189.0" layoutY="229.0" />
+      <TextField fx:id="CustomerID" layoutX="189.0" layoutY="379.0" />
+      <Label layoutX="14.0" layoutY="85.0" text="Appointment ID">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="121.0" text="Title">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="157.0" text="Description">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="192.0" text="Location">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="11.0" layoutY="267.0" text="Contact Name">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="229.0" text="Type">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="306.0" text="Start Date and Time">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="343.0" text="End Date and Time">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="379.0" text="Customer ID">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Button fx:id="cancelButton" layoutX="439.0" layoutY="464.0" mnemonicParsing="false" onAction="#cancelButton" prefHeight="25.0" prefWidth="71.0" text="Cancel" />
+      <ComboBox fx:id="StartTime" layoutX="385.0" layoutY="306.0" prefWidth="150.0" />
+      <ComboBox fx:id="EndTime" layoutX="385.0" layoutY="343.0" prefWidth="150.0" />
+      <DatePicker fx:id="StartDate" layoutX="188.0" layoutY="306.0" />
+      <DatePicker fx:id="EndDate" layoutX="188.0" layoutY="343.0" />
+      <Button fx:id="saveButton" layoutX="332.0" layoutY="464.0" mnemonicParsing="false" onAction="#SaveButton" prefHeight="25.0" prefWidth="71.0" text="Save" />
+      <TextField fx:id="UserID" layoutX="189.0" layoutY="414.0" />
+      <Label layoutX="15.0" layoutY="412.0" text="User ID">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="blankError" layoutX="15.0" layoutY="447.0" text="Label" />
+      <Label fx:id="overlappingError" layoutX="15.0" layoutY="468.0" text="Label" />
+      <Label fx:id="userError" layoutX="15.0" layoutY="489.0" text="Label" />
+      <ComboBox fx:id="selectContact" layoutX="189.0" layoutY="267.0" prefWidth="150.0" />
+   </children>
+</AnchorPane>
